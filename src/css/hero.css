@@ -1,0 +1,146 @@
+
+
+.container-hero{
+    min-width: 320px;
+    padding-top: 281px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 218px;
+    margin-top: 0;
+    
+
+    background-image: url('../img/hero/hero-blue-mob-1x.png');
+    background-repeat: no-repeat;
+    background-size: 578px 812px; 
+    background-position: -268px 0px;
+}
+
+@media (min-resolution: 192dpi) {
+    .container-hero {
+        background-image: url('../img/hero/hero-blue-mob-2x.png');
+    }
+}
+
+.hero-text{
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.hero-list{
+    display: flex;
+    gap: 4px;   
+}
+
+.hero-list-item{
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+}
+
+.hero-list-item:not(:last-child){
+    width: 37px;
+    height: 37px;
+}
+
+.hero-list-item:last-child{
+    padding: 10px 12px;
+}
+
+.hero-list-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-list-item:hover,
+.hero-list-item:focus {
+    border: 1px solid #fafafa;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .container-hero {
+        background-size: cover;
+        background-position: right 0;
+        min-height: 100vh;
+    }
+
+    .hero-list {
+        justify-content: center;
+    }
+
+    .hero-list-item:not(:last-child) {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-list-item:last-child {
+        padding: 7px 10px;
+    }
+
+    .hero-list-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-hero {
+            padding-top: 300px;
+            gap: 187px;
+
+            background-size: 728px 1024px; 
+            background-position: -257px 0px;
+        }
+    
+    
+    .hero-text {
+        padding-right: 72px;
+        font-weight: 500;
+        font-size: 90px;
+    }
+
+    .hero-list{
+        gap:8px;
+        justify-content: right;
+    }
+
+    .hero-list-item:not(:last-child) {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .hero-list-item:last-child {
+        padding: 18px 24px;
+    }
+    .hero-list-link{
+    font-size: 16px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .container-hero {
+        gap: 243px;
+
+        background-image: url('../img/hero/hero-blue-1x.png');
+        background-size: 1400px 900px;
+        background-position: 0px 0px;
+    }
+
+    @media (min-resolution: 192dpi) {
+            .container-hero {
+                background-image: url('../img/hero/hero-blue-2x.png');
+            }
+        }
+
+    .hero-text {
+        padding-right: 146px;
+        padding-left: 146px;
+    
+    }
+}

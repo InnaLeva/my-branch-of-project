@@ -1,0 +1,84 @@
+/*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.section-covers {
+  position: relative;
+}
+
+.container-covers {
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  height: 508px;
+
+  position: absolute;
+
+  left: 0;
+  overflow: hidden;
+
+  background-image: url('../img/covers/bg-covers.png');
+  background-color: #1c1d20;
+  background-repeat: no-repeat;
+  background-size: 1018px 784px;
+}
+
+@media (min-resolution: 192dpi) {
+  .container-covers {
+    background-image: url('../img/covers/bg-covers-retina.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-covers {
+    background-size: 1288px 1004px;
+    height: 960px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-covers {
+    background-size: 1528px 1064px;
+  }
+}
+
+.covers-title {
+  display: none;
+}
+
+.covers-list {
+  height: 100vh;
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.covers-project {
+  margin-right: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 10);
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+/*
+.covers-img {
+  width: 282px;
+}
+*/
