@@ -8,8 +8,14 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
-    background-image: url('../img/footer/background-mob1x.jpg');
+    background-image: url('../img/footer/background-mob1x-min.png');
     
+}
+
+@media (min-resolution: 192dpi) {
+    .footer-container {
+        background-image: url('../img/footer/background-mob2x-min.png');
+    }
 }
 
 .footer-logo-link {
@@ -200,7 +206,14 @@
     .footer-container {
         padding-top: 80px;
         gap: 18px;
+        background-image: url('../img/footer/background-tablet1x-min.png');
     }
+
+         @media (min-resolution: 192dpi) {
+             .footer-container {
+                 background-image: url('../img/footer/backgroud-tablet2x-min.png');
+             }
+         }
 
     .footer-title {
         width: 542px;
@@ -264,7 +277,13 @@
     .footer-container {
         padding-left: 196px;
         padding-right: 196px;
+        background-image: url('../img/footer/background-desk1x-min.png');
     }
+         @media (min-resolution: 192dpi) {
+             .footer-container {
+                 background-image: url('../img/footer/background-desk2x-min.png');
+             }
+         }
 
     .footer-form {
         justify-content: flex-start;
