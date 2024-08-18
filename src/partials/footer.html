@@ -1,76 +1,61 @@
 <footer class="section-footer" id="footer">
   <div class="container footer-container">
-    <div class="footer-logo-wrap">
+    <h2 class="footer-title">
+      <p class="footer-logo-text">
         <a class="footer-logo-link" href="./index.html">
           <picture>
             <source srcset="/img/footer/footer-logo/footer-logo-desktop1x-min.png 1x,
-                            /img/footer/footer-logo/footer-logo-destop2x-min.png 2x"
-                            media="(min-width: 1440px)" />
+                            /img/footer/footer-logo/footer-logo-destop2x-min.png 2x" media="(min-width: 1440px)" />
             <source srcset="/img/footer/footer-logo/footer-logo-tablet1x-min.png 1x,
-                            /img/footer/footer-logo/footer-logo-tablet2x-min.png 2x"
-                            media="(min-width: 768px)" />
+                            /img/footer/footer-logo/footer-logo-tablet2x-min.png 2x" media="(min-width: 768px)" />
             <source srcset="/img/footer/footer-logo/footer-logo-mobile1x-min.png 1x,
-                            /img/footer/footer-logo/footer-logo-mobile2x-min.png 2x" 
-                           media="(max-width: 767px)" />
-            <img src="/img/footer/footer-logo/footer-logo-desktop1x-min.jpg" width="70" height="70" alt="Lloyd Jefferson" class="footer-logo-img" />
+                            /img/footer/footer-logo/footer-logo-mobile2x-min.png 2x" media="(max-width: 767px)" />
+            <img src="/img/footer/footer-logo/footer-logo-desktop1x-min.jpg" width="70" height="70"
+              alt="Lloyd Jefferson" class="footer-logo-img" />
           </picture>
-        </a>
-        <h2 class="footer-title">Let’s <span class="footer-title-span">work </span><span class="footer-title-span-together"> together</span></h2>
-    </div>
+        </a> Let’s<span class="footer-title-span"> work </span>together
+      </p>
+    </h2>
+
     <form class="footer-form">
       <label class="footer-form-label">
-        <input class="footer-form-label-input" 
-        type="email" 
-        name="user-email" 
-        placeholder="clients@gmail.com" 
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        title="Email address"
-        value=""
-        required />
+        <input class="footer-form-label-input" type="email" name="user-email" placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="Email address" value="" required />
       </label>
       <label class="footer-form-label">
-        <input
-        class="footer-form-label-input"
-        type="text"
-        name="user-comments"
-        placeholder="comments"
-        required />
-
-        <!--<textarea
-        name="user-comments"
-        id="user-comments"
-        placeholder="comments"
-        class="footer-form-textarea"
-        minlength="1"
-        required
-        ></textarea>-->
+        <input class="footer-form-label-input" type="text" name="user-comments" placeholder="comments" required />
       </label>
       <button type="submit" class="footer-form-button">Send</button>
     </form>
-    <div class="footer-contact-wrap">
-      <a class="footer-contact-email-link footer-contact-link" 
-        href="mailto:info@devstudio.com" 
-        target="_blank" rel="noopener noreferrer nofollow">lloydjefferson@gmail.com</a>
-      <a class="footer-contact-tel-link footer-contact-link" 
-        href="tel:+380684439426" 
-        target="_blank" rel="noopener noreferrer nofollow">+380 11 1111 11 11</a>
-    </div>
+    <ul class="footer-contact-wrap-list">
+      <li class="footer-contact-item">
+        <a class="footer-contact-email-link footer-contact-link" href="mailto:info@devstudio.com" target="_blank"
+          rel="noopener noreferrer nofollow">lloydjefferson@gmail.com</a>
+      </li>
+      <li class="footer-contact-item">
+        <a class="footer-contact-tel-link footer-contact-link" href="tel:+380684439426" target="_blank"
+          rel="noopener noreferrer nofollow">+380 11 1111 11 11</a>
+      </li>
+    </ul>
   </div>
-</footer>
-
 <!------modal window------->
-
-<div class="modal is-open footer-backdrop">
-  <div class="footer-modal">
+<div class="footer-backdrop visually-hidden">
+  <div class="modal  footer-modal">
     <button type="button" class="footer-close-button">
       <svg class="footer-icon-close" width="22" height="22">
-        <use href="/src/img/icons.svg#icon-x"></use>
+        <use href="../img/icons.svg#icon-x"></use>
       </svg>
     </button>
       <div class="footer-backdrop-content">
     <h3 class="footer-backdrop-title">Thank you for your interest in cooperation!</h3>
     <p class="footer-backdrop-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
   </div>
-  </div>
+  </div> 
 
 </div>
+</footer>
+
+
+
+
+
