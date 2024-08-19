@@ -74,12 +74,12 @@
     border-radius: 50%;
     background-color: #0041E8;
     border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-button:hover,
 .footer-form-button:focus {
     background-color: #0039CF;
-    ;
 }
 
 .footer-contact-wrap-list {
@@ -111,39 +111,40 @@
 
 
 .footer-backdrop {
-  
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    z-index: 99998;
     overflow: auto;
-    background-color: rgba(15, 15, 16, 0.6);
+    display: grid;
+    opacity: 0;
+  visibility: hidden;  
+  background-color: rgba(15, 15, 16, 0.6);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.footer-backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.footer-backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+   
     transition-delay: 150ms;
     }
 
 .footer-modal {
-    background-position: center;
+    
     background: #1c1d20;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    
     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    
     transform: translate(-50%, -50%);
+    transform: scale(0);
+    z-index: 1;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
     transition-delay: 150ms;
-        
+       
     border: 1px solid rgba(250, 250, 250, 0.1);
     width: 343px;
     height: 276px;
@@ -151,6 +152,11 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
+}
+
+.footer-backdrop.is-open .footer-modal {
+    transform: scale(1);
+    visibility: visible;
 }
 
 .footer-close-button {
@@ -169,11 +175,7 @@
 }
 
 
-.footer-icon-close {
-    position: absolute;
 
-    fill: #fbfbfb;
-}
 
 .footer-backdrop-content {
     padding-right: 32px;
