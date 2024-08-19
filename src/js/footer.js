@@ -1,4 +1,4 @@
-import Notiflix from 'notiflix';
+
 import SimpleLightbox from "simplelightbox";
 
 const form = document.querySelector('.footer-form');
@@ -12,10 +12,6 @@ const modalContent = document.querySelector('.footer-modal');
 
 
 const STORAGE_KEY = "feedback-form-state";
-
-form.addEventListener("submit", handleFormSubmit);
-form.addEventListener("input", handleFormInput);
-sendBtn.addEventListener('click', )
 
 let formData = {
     email: "",
@@ -88,7 +84,18 @@ footerModal.addEventListener('click', event => {
     event.currentTarget.classList.remove('is-open');
 });
   
-  /*else {
+  
+
+
+
+
+
+
+
+
+
+
+/*else {
     localStorage.removeItem(STORAGE_KEY);
     form.reset();
     formData = { email: "", message: "" };
