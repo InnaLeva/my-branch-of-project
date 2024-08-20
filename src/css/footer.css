@@ -36,6 +36,12 @@
     text-transform: uppercase;
 }
 
+.footer-logo-img {
+    border-radius: 14px;
+    width: 44px;
+    height: 44px;
+}
+
 .footer-title-span {
     color: #0041E8;
 }
@@ -64,6 +70,7 @@
     color: #fafafa;
     margin-bottom: 20px;
     background-color: transparent;
+    display: block;
 }
 
 #charCount {
@@ -126,6 +133,9 @@
     background-color: #0039CF;
 }
 
+.footer-form-button:disabled {
+    cursor: no-drop;
+}
 .footer-form-button:not(:disabled) {
     cursor: pointer;
 }
