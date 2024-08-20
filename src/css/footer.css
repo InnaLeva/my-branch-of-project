@@ -9,8 +9,7 @@
     flex-direction: column;
     gap: 64px;
     background-image: url('../img/footer/background-mob1x-min.png');
-    background-position: right;
-    background-repeat: no-repeat;
+    
 }
 
 @media (min-resolution: 192dpi) {
@@ -45,8 +44,8 @@
     flex-direction: column;
     width: 100%;
     gap: 16px;
+
     letter-spacing: -0.02em;
-    position: relative;
 }
 
 .footer-form-label {
@@ -66,48 +65,10 @@
     background-color: transparent;
 }
 
-#charCount {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
-    display: none;
-    position: absolute;
-    top: 107%;}
-
 .footer-form-label-input:hover,
 .footer-form-label-input:focus {
     background-color: transparent;
     color: #fafafa;
-}
-
-.footer-form-label-input.success {
-    border-bottom: 1px solid #3cbc81;
-}
-
-.footer-form-label-input:not(:placeholder-shown).error {
-    border-bottom: 1px solid #e74a3b;
-}
-
-.footer-input-message {
-    display: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
-    
-    margin-top: -12px;
-    margin-bottom: 16px;
-    width: 100%;
-}
-
-.footer-form-label-input.success + .footer-input-message {
-    display: block;
-}
-
-.footer-form-label-input:not(:placeholder-shown).error+.footer-input-message {
-    display: block;
 }
 
 .footer-form-button {
@@ -124,13 +85,6 @@
 .footer-form-button:hover,
 .footer-form-button:focus {
     background-color: #0039CF;
-}
-
-.footer-form-button:not(:disabled) {
-    cursor: pointer;
-}
-.footer-form-button:not(:disabled):active {
-    transform: scale(0.95);
 }
 
 .footer-contact-wrap-list {
@@ -295,12 +249,6 @@
     .footer-form-label {
         min-width: 245px;
     }
-
-    .footer-input-message {
-        position: absolute;
-        width: 100%;
-        top: 134%;
-        }
 
     .footer-form-button {
         width: 150px;
