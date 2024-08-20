@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet" />
   <script type="module" crossorigin src="/my-branch-of-project/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/my-branch-of-project/assets/index-6a6e79a8.css">
+  <link rel="stylesheet" href="/my-branch-of-project/assets/index-5bb7d0f1.css">
 </head>
 
 <body>
@@ -734,15 +734,13 @@
 
     <form class="footer-form">
       <label class="footer-form-label">
-        <input class="footer-form-label-input" type="email" name="email" id="email" placeholder="clients@gmail.com"
+        <input class="footer-form-label-input" type="email" name="user-email" placeholder="clients@gmail.com"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="Email address" value="" required />
-          <span class="footer-input-message" id="emailSuccessMessage"></span>
       </label>
       <label class="footer-form-label">
-        <input class="footer-form-label-input form-comments" type="text"  placeholder="comments" required />
-      <p id="charCount">0</p>
+        <input class="footer-form-label-input" type="text" name="user-comments" placeholder="comments" required />
       </label>
-      <button type="submit" class="footer-form-button" disabled>Send</button>
+      <button type="submit" class="footer-form-button">Send</button>
     </form>
     <ul class="footer-contact-wrap-list">
       <li class="footer-contact-item">
@@ -756,8 +754,8 @@
     </ul>
   </div>
 <!------modal window-------->
-<div class="footer-backdrop" id="modal">
-  <div class="footer-modal is-open">
+<div class="footer-backdrop  " id="modal">
+  <div class="footer-modal">
     <button type="button" class="footer-close-button">
       <svg class="footer-icon-close" width="22" height="22">
         <use href="../img/icons.svg#icon-x"></use>
