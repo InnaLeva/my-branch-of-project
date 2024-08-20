@@ -1,6 +1,5 @@
 
 import SimpleLightbox from "simplelightbox";
- import "simplelightbox/dist/simple-lightbox.min.css";
 
 const form = document.querySelector('.footer-form');
 const input = document.querySelector('.footer-form-label-input');
